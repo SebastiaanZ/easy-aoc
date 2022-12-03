@@ -4,11 +4,14 @@ version = "0.1.0"
 description = "Tools for the Advent of Code"
 license = "MIT"
 authors = ["Sebastiaan Zeeff <sebastiaan.zeeff@gmail.nl>"]
-packages = [{ include = "aoc", from = "src" }]
+packages = [{ include = "easy_aoc", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 attrs = "^22.1.0"
+appdirs = "^1.4.4"
+requests = "^2.28.1"
+yarl = "^1.8.2"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.0"
@@ -16,6 +19,7 @@ black = "^22.10.0"
 mypy = "^0.991"
 pylint = "^2.15.7"
 isort = "^5.10.1"
+types-requests = "^2.28.11.5"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
